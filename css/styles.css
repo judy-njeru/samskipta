@@ -1,0 +1,2019 @@
+/*.....GENERAL STYLING.....*/
+* {
+	margin: 0px;
+	padding: 0px;
+	font-size: 22px;
+}
+
+.container {
+	max-width: 1100px;
+	width:100%;
+	margin: 0 auto;
+	box-sizing:border-box;
+}
+
+.row:before, .row:after {
+	content:'';
+	display: table;
+}
+
+.row:after {
+	clear:both;
+}
+
+.row {
+	height:auto;
+	box-sizing: border-box; 
+	margin: 0 auto;
+}
+
+[class*='col-'] {/*apply CSS to a group of classes col-*/
+	min-height: 1px;
+	float:left;
+	/*padding: 0 15px; */
+	box-sizing: border-box; /*The CSS box-sizing property allows us to include the padding and border in an element's total width and height.*/
+}
+
+h1 {
+	position: relative;
+}
+
+ h1:after {
+	content: '';
+	background-image: url("../images/underline.png");
+	height: 3px;
+	position: relative;
+	width: 30px;
+	display: block;
+	margin-top: 10px;
+}
+
+h2:after {
+	content: '';
+	display: table;
+}
+
+a {
+	text-decoration: none;
+}
+
+#main-nav  ul li a:hover {
+	border-bottom: 3px solid red;
+}
+
+/*.activate a:hover {
+	border-bottom: 3px solid red;
+}
+.activate a:active {
+	border-bottom: 1px solid red;
+
+    text-decoration: underline;
+
+}*/
+
+.activee {
+	border-bottom: 3px solid red;
+	background-color: #fff;
+}
+
+
+ p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size:18px;
+	line-height: 30px;
+	color: #000;
+	padding-top:30px;
+}
+
+button {
+	width: 170px;
+	height: 50px;
+	background-color: #FFF; 
+    border-color: #F75C03;
+    border-radius: 30px;
+    border-style: solid;
+    color: #F75C03;
+    text-align: center;
+    margin:auto;
+    font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size:14px;
+	text-transform: uppercase;
+	margin-top: 30px;
+	outline: none;
+}
+
+button:hover {
+	background-color: #F75C03; 
+    color: #FFF;
+}
+
+/*.....HEADER STYLING.....*/
+
+header {
+	background-color: #fff;
+	height: 90px;
+	/*border-bottom: 1px solid rgba(255, 0, 0, .5);*/
+	box-shadow: 0px 2px 8px 2px rgba(0,0,0,0.3);
+	position:fixed; 
+	top:0px; 
+	margin:auto; 
+	z-index:100000; 
+	width:100%;
+}
+
+#header {
+	margin-bottom: 90px;
+}
+
+.header-container {
+	max-width:100%;
+	padding-left:20px;
+	padding-top:18px;
+	box-sizing:border-box
+}
+
+.logo {
+	width: 62%;
+	float:left;
+}
+
+.mobile-logo {
+	display: none;
+}
+
+img {
+	max-width: 380px;
+	height:auto;
+	width:100%;
+}
+
+.navigation {
+	float: right;
+}
+
+#main-nav {
+	width: 100%;
+	float: right;
+}
+
+#main-nav  ul {
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#main-nav  ul li a {
+	text-decoration: none;
+	padding:18px;
+	display:block;
+	text-transform: capitalize;
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+	transition: all .3s;
+}
+
+/*li a:active {
+	border-bottom: red;
+	 border-bottom: 2px solid #F75C03;
+     color:#F75C03;
+     padding-bottom:1px;
+}*/
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown a:hover, .dropdown:hover .dropbtn {
+    background-color: #F75C03;
+    color:#fff;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #F75C03
+}
+
+.show {
+	display:block;
+}
+
+/*......FOOTER STYLING......*/
+
+footer {
+	background-color: #D0021B;
+	height:260px;
+	color:#fff;
+}
+
+.footer-row {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top:50px;
+}
+
+.foooterrow-1 h2 {
+	display:block;
+	text-transform: capitalize;
+	font-family: 'Open Sans', sans-serif;
+	font-size:20px;
+	text-align: center;
+	font-weight: 400;
+}
+
+.foooterrow-1 h3 {
+	display:block;
+	text-transform: capitalize;
+	font-family: 'Open Sans', sans-serif;
+	font-size:18px;
+	text-align: center;
+	font-weight: 300;
+	padding-top:10px;
+}
+
+.foooterrow-1 h3:after {
+	content: '';
+	background-image: url("../images/underline.png");
+	border: 1px solid #fff;
+	position: relative;
+	width: 30px;
+	display: block;
+	margin-top: 10px;
+	left: 42%;
+}
+
+.footerrow-2 {
+	padding-top:36px;
+}
+
+.footerrow-2 h4 {
+	display:block;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	text-align: center;
+	font-weight: 300;
+}
+
+#email {
+	padding-top: 3px;
+}
+
+.footerrow-3 {
+	padding-top: 30px;
+}
+
+.footerrow-3 h4 {
+	float:left;
+	text-transform: capitalize;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	color:white;
+	text-align: center;
+	font-weight: 300;
+	padding-left:12px;
+	padding-top: 3px;
+} 
+
+.footerrow-3 img {
+	height: 20px;
+	width: 20px;
+	float:left;
+}
+
+.footerrow-3 a:hover {
+	text-decoration: underline;
+}
+
+
+
+/*.......................HOME PAGE STYLING....................*/
+
+.slideshow-container img {
+  /* Set rules to fill background */
+  max-height: 80%;
+  max-width: 100%;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: 100%;
+	
+  /* Set up positioning */
+  position: relative;
+  top: 20px;
+  left: 0;
+}
+
+#color-1 {
+	width:100%;
+}
+
+.mySlides {
+	display:none
+}
+
+/* Slideshow container */
+.slideshow-container {
+  	position: relative;
+  	margin-top: 90px;
+}
+
+.slideshow-container h1:after {
+	background-image: none;
+}
+
+.dot-nav {
+	margin-top: 30px;
+	text-align: center;
+}
+
+#color-1 {
+	background-color: #19F0D8;	
+}
+
+#image-1 {
+	background-image: url(../images/horfa.png);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position:50% 50%;
+	width:100%;
+	min-height:700px;
+	height: 100%;
+	opacity: 0.25;
+}
+
+#color-2{
+	background-color: #9B9B9B;	
+}
+
+#image-2 {
+	background-image: url(../images/heilsa.jpeg);
+	background-size:cover;
+	background-position:50% 50%;
+	width:100%;
+	min-height:700px;
+	height: 100%;
+	opacity: 0.25;
+}
+
+#color-3{
+	background-color: #F75C03;	
+}
+
+#image-3 {
+	background-image: url(../images/hlusta.png);
+	background-size:cover;
+	background-position:50% 50%;
+	filter: grayscale(100%);
+	width:100%;
+	min-height:700px;
+	height: 100%;
+	opacity: 0.25;
+}
+
+#color-4{
+	background-color: #02C8A7;	
+}
+
+#image-4 {
+	background-image: url(../images/hljoma.jpg);
+	background-size:cover;
+	background-position:50% 50%;
+	width:100%;
+	min-height:700px;
+	height: 100%;
+	opacity: 0.25;
+}
+
+#color-5{
+	background-color: #9B9B9B;	
+}
+
+#image-5 {
+	background-image: url(../images/hrosa.jpg);
+	background-size:cover;
+	background-position:50% 50%;
+	width:100%;
+	min-height:700px;
+	height: 100%;
+	opacity: 0.25;
+}
+ 
+#color-6{
+	background-color: #29910D;	
+}
+
+#image-6 {
+	background-image: url(../images/hjalpaa.png);
+	background-size:cover;
+	background-position:50% 50%;
+	filter: grayscale(100%);
+	width:100%;
+	min-height:700px;
+	height: 100%;
+	opacity: 0.25;
+}
+/* Caption text */
+
+.image-text{
+	margin-top: -280px;
+	text-align: center;
+
+}
+
+.image-text h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size:66px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 2px 3px #000000;
+	padding-top:10px;
+}
+.image-text h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size:20px;
+	color: #000;
+	text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin-top:100px;
+  opacity: 0.65;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid rgb(155,155,155);
+  display: inline-block;
+  /*transition: background-color 0.6s ease;*/
+}
+
+.active {
+  background-color: #000;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+	@-webkit-keyframes fade {
+	  from {
+	  	opacity: .4
+	  } 
+	  to {
+	  	opacity: 1
+	  }
+	}
+
+	@keyframes fade {
+	  from {
+	  	opacity: .4
+	  } 
+	  to {
+	  	opacity: 1
+	  }
+	}
+
+
+/*............ UM BOKÍNA SECTION.............*/
+
+
+#about-book {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.book-title h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size:40px;
+	color: #D0021B;
+	padding-top:10px;
+}
+
+.book-cover {
+	float: right;
+    max-width: 220px;
+    width:100%;
+    height:auto;
+}
+
+p.bokina {
+	width:50%;
+}
+
+/*.... um höndurinn.....*/
+
+.author-title h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size:40px;
+	color: #D0021B;
+	padding-top:10px;
+}
+
+.author {
+	float:right;
+}
+
+.author-button{
+	float:left;
+}
+
+.author-row {
+	padding-right: 100px;
+}
+
+#about-author {
+	background-color: #FCFBF9;
+	margin-top: 50px;
+}
+
+#about-author-color {
+	background-color: #FCFBF9;
+}
+
+.authortext-section {
+	float:right;
+	width:50%;
+	margin-top:20px;
+	padding-left: 20px;
+}
+
+/*.horfa-image {
+	float: left;
+	max-width: 400px;
+	width:100%;
+	height:auto;
+	max-height: 500px;
+	background-color: #E14945;
+	margin-left: -16px;
+}
+.img-bg > img {
+	display: none;
+}
+.horfa-small  {
+	background-size:cover;
+	background-position:50% 73%;
+	max-width: 400px;
+	width:100%;
+	min-height:600px;
+	height: 100%;
+	min-height: 500px;
+	opacity: 0.7;
+}*/
+
+.author-image {
+	float: left;
+	max-width:600px;
+	background-repeat: no-repeat;
+	background-position:74% 43%;
+	width:100%;
+	height: auto;
+	height:auto;
+	min-height: 500px;
+	margin-left:-16px;
+}
+
+.author-small  {
+	/*background-size:cover;*/
+	max-width: 400px;
+	width:100%;
+	min-height:600px;
+	height: 100%;
+	min-height: 500px;
+	opacity: 0.7;
+}
+
+
+/*.....BOOK-REVIEW SECTION.....*/
+
+.book-reviews {
+	position: relative;
+	min-height: 400px;
+	margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.item-active:before, .item-active:after {
+	content:'';
+	display: table;
+}
+
+.item-active:after {
+	clear:both;
+}
+
+.item-active {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-stories {
+	margin-top:40px;
+}
+
+.user-image {
+	position: relative;
+    overflow: hidden;
+    margin: 0 auto 30px;
+    max-width: 200px;
+    width:100%;
+    height: auto;
+}
+
+.img-circle {
+	display: block;
+	max-width: 200px;
+	height:auto;
+	width:100%;
+}
+
+.prev-arrow {
+  	cursor:pointer;
+    outline: none;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border: 0;
+    float: left;
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    padding: 0;
+    z-index: 1400;
+}
+
+.fa {
+	color: #C3C8CD;
+	font-size: 70px;
+}
+
+.fa-angle-right:hover {
+    color: #F75C03;;
+}
+
+.fa-angle-left:hover {
+    color: #F75C03;;
+}
+
+.next-arrow {
+    cursor:pointer;
+    outline: none;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border: 0;
+    float: right;
+    z-index: 1400;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    padding: 0;
+}
+
+blockquote {
+    margin: 0 auto;
+    max-width: 790px;
+    border: 0;
+    text-align: center;
+    padding: 0 60px;
+    font-size:17px;
+}
+
+blockquote p {
+ 	quotes: none;
+    color: #151515;
+    display: block;
+    font: italic 16px/28px 'Open Sans', sans-serif;
+    padding: 0 0 47px;
+ }
+
+ blockquote small {
+ 	display:block;
+ 	color: black;
+ 	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+ }
+
+/*.......................SAMSKIPTABORÐOÐIN PAGE........................*/
+
+
+.horfa-row {
+	margin-right: 100px;
+}
+
+.horfa-text {
+	float:right;
+}
+
+.horfa-image {
+	float: left;
+	max-width: 400px;
+	width:100%;
+	height:auto;
+	max-height: 500px;
+	background-color: #E14945;
+	margin-left: -16px;
+}
+.img-bg > img {
+	display: none;
+}
+.horfa-small  {
+	background-size:cover;
+	background-position:50% 73%;
+	max-width: 400px;
+	width:100%;
+	min-height:600px;
+	height: 100%;
+	min-height: 500px;
+	opacity: 0.7;
+}
+
+.horfa-text h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size:40px;
+	line-height: 50px;
+	color: #D0021B;
+	padding-top:30px;
+}
+
+.horfa-text h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size:25px;
+	line-height: 30px;
+	color: #000;
+	padding-top:30px;
+}
+
+.horfa-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #000;
+	padding-top:30px;
+}
+
+.heilsa-row {
+	background-color: #FCFBF9;
+}
+
+.heilsa-image {
+	float: right;
+	max-width: 400px;
+	width:100%;
+	height:auto;
+	max-height: 500px;
+	background-color: #E14945;
+	margin-right: -30px;
+}
+
+.heilsa-small  {
+    /*background-image: url(../images/heilsa-small.jpg);*/
+	background-size:cover;
+	background-position:50% 73%;
+	max-width: 400px;
+	width:100%;
+	min-height:600px;
+	height: 100%;
+	min-height: 500px;
+	opacity: 0.7;
+}
+
+.heilsa-text { 
+	margin-left: 100px;
+}
+
+.heilsa-text h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size:40px;
+	line-height: 50px;
+	color: #D0021B;
+	padding-top:30px;
+}
+
+.heilsa-text h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size:25px;
+	line-height: 30px;
+	color: #000;
+	padding-top:30px;
+}
+
+.heilsa-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #000;
+	padding-top:30px;
+
+}
+
+.hlusta-row {
+	 margin-right:50px;
+}
+
+.hlusta-image {
+	float: left;
+	max-width: 400px;
+	width:100%;
+	height:auto;
+	max-height: 500px;
+	background-color: #E14945;
+	margin-left: -16px;
+}
+
+.hlusta-small  {
+    /*background-image: url(../images/hlusta-small.jpg);*/
+	background-size:cover;
+	background-position:50% 28%;
+	max-width: 400px;
+	width:100%;
+	min-height:600px;
+	height: 100%;
+	min-height: 500px;
+	opacity: 0.7;
+}
+
+.hlusta-text {
+	float: right;
+}
+
+.hlusta-text h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size:40px;
+	line-height: 50px;
+	color: #D0021B;
+	padding-top:30px;
+}
+
+.hlusta-text h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size:25px;
+	line-height: 30px;
+	color: #000;
+	padding-top:30px;
+}
+
+.hlusta-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #000;
+	padding-top:30px;
+}
+
+.hljoma-row {
+	background-color: #FCFBF9;
+	max-height: 500px;
+}
+
+.hljoma-image {
+	float: right;
+	max-width: 500px;
+	width:100%;
+	height:auto;
+	background-color: #E14945;
+	margin-right: -30px;
+}
+
+.hljoma-small {
+    /*background-image: url(../images/hljoma-small.jpg);*/
+	background-size:cover;
+	background-position:50% 73%;
+	max-width: 500px;
+	width:100%;
+	min-height:600px;
+	height: 100%;
+	min-height: 500px;
+	opacity: 0.7;
+}
+
+.hljoma-text{
+	margin-left: 100px;
+}
+
+.hljoma-text h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size:40px;
+	line-height: 50px;
+	color: #D0021B;
+	padding-top:30px;
+}
+
+.hljoma-text h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size:25px;
+	line-height: 30px;
+	color: #000;
+	padding-top:30px;
+}
+
+.hljoma-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #000;
+	padding-top:30px;
+
+}
+
+.hrosa-image {
+	float: left;
+	max-width: 400px;
+	width:100%;
+	height:auto;
+	max-height: 500px;
+	background-color: #E14945;
+	margin-left: -16px;
+}
+
+.hrosa-small  {
+    /*background-image: url(../images/hrosa-small.jpg);*/
+	background-size:cover;
+	background-position:50% 28%;
+	max-width: 400px;
+	width:100%;
+	min-height:600px;
+	height: 100%;
+	min-height: 500px;
+	opacity: 0.7;
+}
+
+.hrosa-row {
+	margin-right:100px;
+}
+
+.hrosa-text {
+	float: right;
+}
+
+.hrosa-text h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size:40px;
+	line-height: 50px;
+	color: #D0021B;
+	padding-top:30px;
+}
+
+.hrosa-text h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size:25px;
+	line-height: 30px;
+	color: #000;
+	padding-top:30px;
+}
+
+.hrosa-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #000;
+	padding-top:30px;
+}
+
+.hjalpa-row {
+	background-color: #FCFBF9;
+}
+
+.hjalpa-image {
+	float: right;
+	max-width: 400px;
+	width:100%;
+	height:auto;
+	max-height: 500px;
+	background-color: #E14945;
+	margin-right: -30px;
+}
+
+.hjalpa-small  {
+    /*background-image: url(../images/hjalpa-small.jpg);*/
+	background-size:cover;
+	background-position:50% 73%;
+	max-width: 400px;
+	width:100%;
+	min-height:600px;
+	height: 100%;
+	min-height: 500px;
+	opacity: 0.7;
+}
+
+.hjalpa-text {
+	margin-left: 100px;
+}
+
+.hjalpa-text h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size:40px;
+	line-height: 50px;
+	color: #D0021B;
+	padding-top:30px;
+}
+
+.hjalpa-text h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size:25px;
+	line-height: 30px;
+	color: #000;
+	padding-top:30px;
+}
+
+.hjalpa-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #000;
+	padding-top:30px;
+}
+
+
+/*..........................UM HÖNDURINN PAGE..........................*/
+
+#hofundurinn {
+	margin-top: 200px;
+	margin-bottom: 100px;
+}
+
+.um-hofundurinn {
+	float: right;
+}
+
+.um-hofundurinn h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size:30px;
+	color: #D0021B;
+	padding-top:10px;
+}
+
+.um-hofundurinn h2:after {
+	background-image: url(../images/underline.png);
+    height: 3px;
+    position: relative;
+    width: 30px;
+    display: block;
+    margin-top: 10px;
+    content: '';
+}
+
+.hofundur-image {
+	max-width:400px;
+	width:100%;
+	max-height:550px;
+	box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hugmynd-button {
+	margin-left:100px;
+}
+
+/*.......................HAFA SAMBAND PAGE........................*/
+
+#samband {
+	margin-top: 100px;
+}
+
+.samband-text h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size:30px;
+	color: #D0021B;
+	padding-top:100px;
+}
+
+.samband-text h2:after {
+	content: '';
+	background-image: url("../images/underline.png");
+	height: 3px;
+	position: relative;
+	width: 30px;
+	display: block;
+	margin-top: 10px;
+}
+
+.samband-text p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size:21px;
+	color: #000;
+	word-spacing: 3px;
+	line-height: 36px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-form {
+	margin-top: 50px;
+}
+
+form label {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size:18px;
+	color: #000;
+}
+
+.input-spacing {
+	margin-top: 40px;
+}
+
+#message {
+	height: 200px;
+	padding-top: 0;
+   padding-left: 0;
+}
+
+.submit {
+    width: 15%;
+    background-color: #fff;
+    color: #F75C03;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: #F75C03;
+    border-style: solid;
+    color: #F75C03;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 40px;
+    outline: none;
+}
+
+.submit:hover {
+    background-color: #F75C03;
+    color: #fff;
+    
+}
+
+#form {
+	margin-bottom: 150px;
+    
+}
+
+form input:focus, textarea:focus{
+	outline:none;
+	border: 2px solid #F75C03;
+}
+
+#name-required, #email-required, #message-required, #subject-required{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size:18px;
+	color: #F75C03;
+}
+
+
+
+/*.................MEDIA QUERIES..........................MEDIA QUERIES.......................MEDIA QUERIES.................*/
+
+	.col-1 {
+		width: 8.3333%;
+	}
+	.col-2 {
+		width: 16.6666%;
+	}
+	.col-3 {
+		width: 25%;
+	}
+	.col-4 {
+		width: 33.3333%;
+	}
+	.col-5 {
+		width: 41.6666%;
+	}
+	.col-6 {
+		width: 50%;
+	}
+	.col-7 {
+		width: 58.3333%;
+	}
+	.col-8 {
+		width: 66.6666%;
+	}
+	.col-9 {
+		width: 75%;
+	}
+	.col-10 {
+		width: 83.3333%;
+	}
+	.col-11 {
+		width: 91.6666%;
+	}
+	.col-12 {
+		width: 100%;
+	}
+
+
+
+@media screen and (max-width: 1082px) {
+
+/*.......................UM HÖFUNDURINN PAGE........................*/
+
+	#main-nav ul li a {
+		font-size: 12px;
+
+	}
+
+	p {
+	    font-size: 15px;
+	    line-height: 30px;
+	    color: #000;
+	    padding-top: 30px;
+	}
+
+	.navigation {
+		margin-right: 30px;
+    	margin-top: -16px;
+	}
+
+	#main-nav ul li a {
+			font-size: 15px;
+
+		}
+
+
+	.author-row {
+		    padding-right: 40px;
+	}
+
+	.book-row {
+		padding-left: 30px;
+	}
+
+/*.......................SAMSKIPTABORÐOÐIN PAGE........................*/
+
+	.horfa-row {
+     	margin-right: 0px; 
+	}
+	.heilsa-text, .hljoma-text, .hjalpa-text {
+		margin-left:20px;
+	}
+
+
+	button {
+		width: 150px;
+	}
+	.hugmynd-button {
+		float:right;
+		margin-left: 20px;
+	}
+
+
+
+	.col-sm-1 {
+		width: 8.3333%;
+	}
+	.col-sm-2 {
+		width: 16.6666%;
+	}
+	.col-sm-3 {
+		width: 25%;
+	}
+	.col-sm-4 {
+		width: 33.3333%;
+	}
+	.col-sm-5 {
+		width: 41.6666%;
+	}
+	.col-sm-6 {
+		width: 50%;
+	}
+	.col-sm-7 {
+		width: 58.3333%;
+	}
+	.col-sm-8 {
+		width: 66.6666%;
+	}
+	.col-sm-9 {
+		width: 75%;
+	}
+	.col-sm-10 {
+		width: 83.3333%;
+	}
+	.col-sm-11 {
+		width: 91.6666%;
+	}
+	.col-sm-12 {
+		width: 100%;
+	}
+
+}
+
+
+
+
+
+
+/*...........MOBILE SITE.........*/
+
+.openMenu {
+	display: none;
+}
+
+
+@media screen and (max-width: 550px) {
+
+	header {
+		height:50px;
+		position: fixed;
+		width:100%;
+		top: 0;
+		left: 0;
+	}
+
+	#header {
+		margin-bottom:auto;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.mobile-logo {
+		display: block;
+	    width: 267px;
+	    height: 164px;
+	    position: fixed;
+	    top: -68px;
+	    left: -92px;
+	    overflow: hidden;
+	}
+
+	.dropbtn:before{
+		content:'';
+		display: table;
+	}
+
+	.dropbtn:after {
+		content: '';
+		background-image: url("https://cdn1.iconfinder.com/data/icons/utility/100/SVG_Utility-02-512.png");
+		background-position: 30% -30%;
+		background-repeat: no-repeat;
+		height: 6px;
+		position: relative;
+		width: 90px;
+		display: block;
+		margin-top: 50px;
+		margin-left:20px;
+	}
+
+	.dropdown a {
+		color:black;
+	}
+
+	.dropdown a:hover, .dropdown:hover .dropbtn {
+    background-color: #FCFBF9;
+    color:#000;
+}
+
+	#myDropdown a:hover{
+		color:red;
+	} 
+
+	.dropdown-content:hover {
+		color: red;
+	}
+	
+	.dropdown-content{
+		right: 219px;
+    	margin-top: -48px;
+    	color: red;
+	}
+
+	a.dropbtn {
+		    margin-bottom: -34px;
+	}
+
+	.slideshow-container {
+		margin-top:auto;
+	}
+
+	nav#main-nav {
+		position: fixed;
+		top: 51px;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		background-color: #FCFBF9;
+		float:none;
+		margin-right: -100%;
+		transition: all 0.4s;
+		z-index:1;
+	}
+
+	nav#main-nav ul {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		margin-top: -21px;
+	}
+
+	nav#main-nav ul li {
+	    border-bottom: #E0E0E0;
+	    border-style: solid;
+	    width: 90%;
+	    padding: 50px 0px 50px 0px;
+	    text-transform: lowercase;
+	    height:100%;
+	}
+
+	#main-nav  ul li a:hover {
+		border-bottom: none;
+	}
+
+	li.dropdown {
+		padding: 30px 0px 30px 0px;
+	}
+
+	nav#main-nav ul li a {
+    	text-align: left;
+	}
+
+	.menu-opened nav#main-nav {
+		margin-right: 0px;
+		height: 100%;
+	}
+
+	.openMenu {
+		display: block;
+		position:fixed;
+		top:10px;
+		right: 10px;
+		z-index: 20;
+		width: 35px;
+		height: 35px;
+		text-decoration: none;
+	}
+
+	.openMenu span {
+		display: block;
+		background-color: #D0021B;
+		height: 3px;
+		transition: all .3s;
+	}
+
+	.openMenu span + span {
+		margin-top: 6px;
+	}
+
+	.menu-opened .openMenu span:nth-child(1) {
+		transform: rotate(45deg);
+		margin: 9px 0 0;
+	}
+
+	.menu-opened .openMenu span:nth-child(2) {
+		opacity:0;
+	}
+
+	.menu-opened .openMenu span:nth-child(3) {
+		transform: rotate(-45deg);
+		margin: -12px 0 0;
+	}
+
+	.fader {
+		position:fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		z-index: -10;
+	}
+
+	.row {
+  		margin: 0px 20px 0px 20px;
+	}
+
+	img {
+		max-width: none;
+	}
+
+	.container {
+	    max-width: 100%;
+	    margin: 0 auto;
+	    box-sizing: border-box;
+	}
+
+	.book-cover{
+	    float: none;
+    	max-width: 220px;
+    	margin: auto;
+	}
+
+	.book-title h1 {
+	    font-family: 'Montserrat', sans-serif;
+	    font-weight: 700;
+	    font-size: 20px;
+	    padding-top: 40px;
+	}
+
+	.book-row {
+		    padding-left: 0px;
+	}
+
+	p {
+	    font-family: 'Open Sans', sans-serif;
+	    font-weight: 300;
+	    font-size: 15px;
+	    line-height: 24px;
+	    padding-top: 30px;
+	}
+
+	button {
+	    width: 140px;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    font-size:14px;
+	}
+
+	.author-image {
+		max-height:none;
+		margin-left:auto;
+		margin-right:auto;
+		float:none;
+		max-width: 500px;
+	}
+
+	.author-small {
+		max-height: 750px;
+		float:none;
+		max-width:500px;
+		min-height:600px;
+	}
+	.author-row{
+		padding-right: 0px;
+	}
+
+	.author-title h1 {
+	    font-family: 'Montserrat', sans-serif;
+	    font-weight: 700;
+	    font-size: 20px;
+	    padding-top: 30px;
+	}
+
+	.author-button {
+		float: none;
+		font-size: 14px;
+		margin-top: 48px;
+	}
+
+	#about-author, #about-author-color{
+	    background-color: #FCFBF9;
+	    padding-bottom: 25px;
+	}
+
+	.authortext-section {
+		padding:0px;
+	}
+
+	.book-reviews {
+		margin-top: 0px;
+	    margin-bottom: 0px;
+	}
+
+	#user-stories {
+		margin-top:90px;
+	}
+
+	blockquote p {
+	    font-size: 12px;
+	}
+
+	.img-circle {
+		display: block;
+	}
+
+	.user-review {
+		float: right;
+	}
+
+	.user-image {
+	    display: block;
+	    max-width: 150px;
+	    width: 100%;
+	    margin-left: auto;
+	    margin-right: auto;
+	    float: none;
+	}
+
+	blockquote small {
+	    font-size:14px;
+	}
+
+	.fa {
+		color: #C3C8CD;
+		font-size: 50px;
+	}
+
+	.next-arrow {
+	    width: 22px;
+	    height: 42px;
+	    padding: 0;
+	}
+
+	.prev-arrow {
+	    width: 22px;
+	    height: 42px; 
+	}
+
+
+	/*.......................SAMSKIPTABORÐOÐIN PAGE........................*/
+
+	
+	.horfa-row {
+		margin-right: 0;
+	}
+
+	.horfa-image {
+		max-height:none;
+		margin-left:auto;
+		margin-right:auto;
+		float:none;
+		max-width: 500px;
+	}
+
+	.horfa-small {
+		max-height: 750px;
+		float:none;
+		max-width:500px;
+		min-height:600px;
+	}
+
+	.horfa-text h1 {
+	    font-size: 30px;
+	}
+
+	.horfa-text p {
+		padding-bottom:70px;
+		font-size: 16px;
+	}
+
+	.heilsa-row {
+		clear: both;
+		float:none;
+		background-color: #fff;
+	}
+
+	.heilsa-image {
+		max-height:none;
+		margin-left:auto;
+		margin-right:auto;
+		float:none;
+		max-width: 500px;
+	}
+
+	.heilsa-small {
+		max-height: 750px;
+		float:none;
+		max-width:500px;
+		min-height:600px;
+	}
+
+	.heilsa-text  {
+		margin:auto;
+	}
+
+	.heilsa-text h1 {
+	    font-size: 30px;
+	}
+
+	.heilsa-text h3 {
+	    font-size: 20px;
+	}
+
+	.heilsa-text p {
+		padding-bottom:70px;
+		font-size: 16px;
+	}
+
+	.hlusta-row {
+		margin-right: auto;
+	}
+
+	.hlusta-image {
+		max-height:none;
+		margin-left:auto;
+		margin-right:auto;
+		float:none;
+		max-width: 500px;
+	}
+
+	.hlusta-small {
+		max-height: 750px;
+		float:none;
+		max-width:500px;
+		min-height:600px;
+	}
+
+	.hlusta-text {
+		float: none;
+	}
+
+	.hlusta-text h1 {
+	    font-size: 30px;
+	}
+
+	.hlusta-text h3 {
+	    font-size: 20px;
+	}
+
+	.hlusta-text h3 {
+	    font-size: 20px;
+	}
+
+	.hlusta-text p {
+		padding-bottom:70px;
+		font-size: 16px;
+	}
+
+	.hljoma-row {
+		margin-right: auto;
+		background-color: #fff;
+		height:100%;
+		max-height: 100%
+	}
+
+	.hljoma-image {
+		max-height:none;
+		margin-left:auto;
+		margin-right:auto;
+		float:none;
+		max-width: 500px;
+	}
+
+	.hljoma-small {
+		max-height: 750px;
+		float:none;
+		max-width:500px;
+		min-height:600px;
+	}
+
+	.hljoma-text  {
+		margin: auto;
+	}
+
+	.hljoma-text h1 {
+	    font-size: 30px;
+	}
+
+	.hljoma-text h3 {
+	    font-size: 20px;
+	}
+
+	.hljoma-text p {
+		padding-bottom:70px;
+		font-size: 16px;
+	}
+
+	.hrosa-row {
+		margin-right: auto;
+		background-color: #fff;
+	}
+
+	.hrosa-image {
+		max-height:none;
+		margin-left:auto;
+		margin-right:auto;
+		float:none;
+		max-width: 500px;
+	}
+
+	.hrosa-small {
+		max-height: 750px;
+		float:none;
+		max-width:500px;
+		min-height:600px;
+	}
+
+	.hrosa-text  {
+		margin: auto;
+	}
+
+	.hrosa-text h1 {
+	    font-size: 30px;
+	}
+
+	.hrosa-text h3 {
+	    font-size: 20px;
+	}
+
+	.hrosa-text p {
+		padding-bottom:70px;
+		font-size: 16px;
+	}
+
+	.hjalpa-row {
+		margin-right: auto;
+		background-color: #fff;
+	}
+	
+	.hjalpa-image {
+		max-height:none;
+		margin-left:auto;
+		margin-right:auto;
+		float:none;
+		max-width: 500px;
+
+	}
+
+	.hjalpa-small {
+		max-height: 750px;
+		float:none;
+		max-width:500px;
+		min-height:600px;
+	}
+
+	.hjalpa-text  {
+		margin: auto;
+	}
+
+	.hjalpa-text h1 {
+	    font-size: 30px;
+	}
+
+	.hjalpa-text h3 {
+	    font-size: 20px;
+	}
+
+	.hjalpa-text p {
+		padding-bottom:70px;
+		font-size: 16px;
+	}
+
+
+/*.......................UM HÖFUNDURINN PAGE........................*/
+
+	#hofundurinn {
+		margin-top:auto;
+	}
+
+	.um-hofundurinn {
+		margin-top:50px;
+	}
+
+	.hofundur-image {
+		max-width: 400px;
+	    width: 100%;
+	    height: auto;
+	    margin: auto;
+	    float: none;
+	}
+
+	.hugmynd-button {
+		float: none;
+		width: 170px;
+		margin-top: 40px;
+		margin-left:auto;
+	}
+
+	.gallery-button {
+		width: 170px;
+		margin-top: 50px;
+	}
+
+
+
+/*.......................HAFA SAMBAND PAGE........................*/
+
+	#samband {
+		margin:auto;
+	}
+
+	.submit {
+		width:25%;
+	}
+
+
+.col-xs-1 {
+	width: 8.3333%;
+}
+.col-xs-2 {
+	width: 16.6666%;
+}
+.col-xs-3 {
+	width: 25%;
+}
+.col-xs-4 {
+	width: 33.3333%;
+}
+.col-xs-5 {
+	width: 41.6666%;
+}
+.col-xs-6 {
+	width: 50%;
+}
+.col-xs-7 {
+	width: 58.3333%;
+}
+.col-xs-8 {
+	width: 66.6666%;
+}
+.col-xs-9 {
+	width: 75%;
+}
+.col-xs-10 {
+	width: 83.3333%;
+}
+.col-xs-11 {
+	width: 91.6666%;
+}
+.col-xs-12 {
+	width: 100%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
